@@ -1,0 +1,162 @@
+@charset "utf-8";
+ html{
+    font-size: 100%;
+ }
+ body{
+    color: #08F7FE;
+    font-size: 0.9rem;
+    background-color: #000000;
+}
+.parallax{
+    background-image: url(https://i.pinimg.com/originals/71/94/b4/7194b445dbf20a09e1061364a9f71bec.jpg);
+    background-attachment:fixed;
+    background-position:center;
+    background-size:cover;
+    background-repeat :no-repeat;
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+li{
+    list-style: none;
+}
+.site-title{
+    width: 120px;
+    line-height: 1px;
+    padding: 10px 0;
+}
+.site-title a{
+    display: block;
+}
+.section-title{
+    display: inline-block;
+    font-size: 3rem;
+    text-align:center;
+    line-height:0.95rem;
+    font-weight:bold;
+    color:#000000;
+    text-shadow:
+            0 0 0.05em #08F7FE,
+            0 0 0.10em #08F7FE,
+            0 0 0.15em #08F7FE,
+            0 0 0.30em #08F7FE;            
+}
+
+.content-title {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto 100px auto;
+    padding: 0 4%;
+    text-align: center;
+}
+
+/* header*/
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+#header ul{
+    display: flex;
+    padding: 10px 0; 
+}
+#header li {
+    margin: 30px;
+}
+#header li a{
+    color: #08F7FE;
+}
+#header li a:hover{
+    opacity: 0.7;
+}
+/*Profile*/
+#profile .content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#profile img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+#profile .text {
+    text-align: left;
+}
+
+ /*Favorite*/
+
+#favorite ul{
+    display:flex;
+    justify-content: space-between;
+}
+#favorite li{
+    width: 32%;
+}
+/*Comment*/
+#comment .content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#comment img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+#comment .text {
+    text-align: left;
+}
+
+/*footer*/
+
+#footer{
+    font-size: 0.5rem;
+    padding: 1px 0;
+    text-align:end;
+}
+
+/*SP*/
+
+@media screen and (max-width: 60px){
+
+    /*Profile*/
+
+    #profile .content{
+        flex-direction: column;
+    }
+
+    #profile img{
+        margin-right: 0;
+    }
+
+    /*Favorite*/
+
+    #favorite ul{
+        flex-direction: column;
+    }
+
+    #favorite li{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #comment .content{
+        flex-direction: column;
+    }
+
+    #comment img{
+        margin-right: 0;
+    }
+}
